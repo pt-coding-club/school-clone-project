@@ -1,0 +1,42 @@
+*{ 
+    list-style: none;
+    text-decoration: none;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    
+}
+
+header {
+    display: flex;
+    background-color: white;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+
+nav {
+    background-color: #5A63B0;
+    color: #fff;
+    padding: 10px;
+}
+.headNav {
+    display: flex;
+}
+.mainNav {
+    display: flex;
+}
+
+section {
+    padding: 20px;
+}
+
+footer {
+    background-color: #273640;
+    color: #8E929B;
+    padding: 10px;
+    text-align: center;
+}
