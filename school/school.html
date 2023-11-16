@@ -4,7 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>평택부트캠프초등학교</title>
-    <link rel="stylesheet" href="./CSS/school.css" />
+    <link rel="stylesheet" href="./CSS/school.css">
+    <script src="./JS/school.js"></script>
   </head>
   <body>
     <header>
@@ -28,9 +29,24 @@
       </ul>
     </nav>
 
+    
     <section class="Home">
-      <p>메인배너 팝업존 넣는 칸</p>
+      <article class="HomeMain">
+        <h2>팝업존</h2>
+        <div class="carousel-container">
+          <div class="carousel-inner">
+            <!-- 이미지 추가 예시 -->
+            <div class="carousel-item"><img src="image/팝업존1.png" alt="팝업존1 이미지"></div>
+            <div class="carousel-item"><img src="image/팝업존2.jpg" alt="팝업존2 이미지"></div>
+            <div class="carousel-item"><img src="image/팝업존3.png" alt="팝업존3 이미지"></div>
+          </div>
+          <button class="carousel-btn prev-btn" onclick="prevSlide()">‹</button>
+          <button class="carousel-btn next-btn" onclick="nextSlide()">›</button>
+        </div>
+      </article>
     </section>
+
+
 
     <section class="icons">
       <p>아이콘들 넣는 칸 (빙글빙글 돌아가는)</p>
@@ -53,6 +69,7 @@
         Office of Education, All Right Reserved.
       </p>
     </footer>
-    <script src="./JS/school.js"></script>
+  
   </body>
+  
 </html>
