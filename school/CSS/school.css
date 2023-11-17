@@ -34,6 +34,45 @@ section {
     padding: 20px;
 }
 
+.icons {
+    position: relative;
+    height: 100%;
+    overflow: hidden;
+}
+
+#icon-image {
+    display: table;
+    width: 100%;
+    table-layout: fixed;
+}
+
+#icon-image > li {
+    display: inline-block;
+    position: relative;
+    width: 25%;
+}
+
+#icon-image > li > a {
+    display: block;
+    position: relative;
+    padding-bottom: 10px;
+}
+
+#icon-image > li > a > img {
+    display: inline-block;
+    text-align: center;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+#icon-image > li > a > span {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    white-space: nowrap;
+    transform: translate(-50%, 0);
+}
+
 footer {
     background-color: #273640;
     color: #8E929B;

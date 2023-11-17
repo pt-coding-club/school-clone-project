@@ -1,0 +1,9 @@
+.full-popup .popup-close {
+    display : flex;
+    justify-content: flex-end;
+    background-color: #3b568f;
+}
+
+.full-popup .popup-close a {
+    color : #fff;
+}

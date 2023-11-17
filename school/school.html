@@ -5,8 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>평택부트캠프초등학교</title>
     <link rel="stylesheet" href="./CSS/school.css" />
+    <script src="./JS/popup.js"></script>
   </head>
-  <body>
+  <body onLoad="javascript:pop()">
     <header>
       <ul class="headNav">
         <li><a href="#">홈</a></li>
@@ -33,7 +34,12 @@
     </section>
 
     <section class="icons">
-      <p>아이콘들 넣는 칸 (빙글빙글 돌아가는)</p>
+        <ul id="icon-image">
+          <li><a href="https://reading.gglec.go.kr/r/newReading/search/schoolCodeSetting.jsp?schoolCode=3146&returnUrl=&kind=1" target="_blank"><img src="./image/독서교육종합지원시스템.png"><span>독서교육종합지원시스템</span></a></li>
+          <li><a href="https://www.schoolinfo.go.kr/ei/ss/Pneiss_b01_s0.do?HG_CD=J100004062" target="_blank"><img src="./image/학교알리미.png"><span>학교알리미</span></a></li>
+          <li><a href="https://pyongtaek-e.goept.kr/pyongtaek-e/na/ntt/selectNttList.do?mi=9015&bbsId=5043" target="_self"><img src="./image/방과후학교.png"><span>방과후학교</span></a></li>
+          <li><a href="#"><img src="./image/운영위원회.png"><span>운영위원회</span></a></li>
+        </ul>
     </section>
 
     <section class="notice">
@@ -50,7 +56,7 @@
         (17921) 평택시 원평2로 4 평택초등학교 Tel :
         (교무실)031-651-3812(평일08:30~16:30), (행정실)
         651-3815(평일08:30~16:30), (당직실)031-651-3815 | Fax : 031-657-3815
-        방문자 통계 Today146명Total95256명 언어 선택​▼ Copyright © Gyeonggido
+        방문자 통계 Today146명 Total95256명 언어 선택​▼ Copyright © Gyeonggido
         Office of Education, All Right Reserved.
       </p>
     </footer>
