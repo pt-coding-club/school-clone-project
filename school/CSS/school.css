@@ -31,7 +31,7 @@ nav {
 }
 
 
-/* ✅수정*/
+/* 진아CSS 시작*/
 .Home {
     display: flex;
     background-image: url('https://pyongtaek-e.goept.kr/upload/pyongtaek-e/widg/img_66920c1c-f650-496c-a8d7-dbe5533507041640239107325.png');
@@ -156,22 +156,61 @@ nav {
     width: 33.33%;
     flex: 0 0 auto;
     box-sizing: border-box;
-    overflow: hidden; /* 이미지를 감싸는 요소에서 overflow를 hidden으로 설정 */
+    overflow: hidden; 
+    /* 이미지를 감싸는 요소에서 overflow를 hidden으로 설정 */
 }
 
 .second-carousel-item img {
     max-width: 100%;
     height: auto;
     transition: transform 0.3s ease-in-out;
-    width: 100%; /* 이미지가 부모 요소 안에서 100% 크기로 유지되도록 설정 */
+    width: 100%; 
+    /* 이미지가 부모 요소 안에서 100% 크기로 유지되도록 설정 */
 }
 
 .second-carousel-item:hover img {
     transform: scale(1.2);
 }
-/* 모든 변환을 유지한상태로 크기만 커지기 */
+/* 모든 변환을 유지한상태로 크기만 커지기! */
 
-/* ✅수정*/
+.second-carousel-container {
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    max-width: 900px;
+    margin: auto;
+}
+
+.second-carousel-inner {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    margin: 0 -10px; 
+}
+
+.second-carousel-item {
+    width: calc(33.33% - 20px); /* 이미지 간격 너비 계산 */
+    flex: 0 0 auto;
+    margin: 0 10px; 
+    box-sizing: border-box;
+    overflow: hidden;
+    border: 1px solid #9E82EE; /* 흰색 테두리 추가 */
+    border-radius: 30px; 
+}
+
+.second-carousel-item img {
+    max-width: 100%;
+    height: auto;
+    transition: transform 0.3s ease-in-out;
+    width: 100%;
+    border-radius: 5px; 
+}
+
+.second-carousel-item:hover img {
+    transform: scale(1.1); 
+}
+/* 호버시 크게 크기조정해주기  1.2배만큼 */
+
+/* 진아CSS 끝*/
 
 
 section {
