@@ -31,35 +31,39 @@ nav {
 }
 
 
-/* 💚여기부터 💚*/
+/* ✅수정*/
 .Home {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    padding: 10px;
-    
-    
+    background-image: url('https://pyongtaek-e.goept.kr/upload/pyongtaek-e/widg/img_66920c1c-f650-496c-a8d7-dbe5533507041640239107325.png');
+    background-size: 110% auto; /* 가로로 조금 확대 */
+    background-repeat: no-repeat;
+    background-position: right center; /* 오른쪽 중앙으로 이동 */
+    height: auto;
+}
+
+
+.HomeMain {
+    position: relative;
+    color: #FFFFFF;
+    background-color: #5A63B0;
+    border-radius: 25px;
+    padding-top: 10px;
+    padding-bottom: 25px;
+    padding-left: 30px;
+    padding-right: 30px;
+    width: 330px;
+    margin-left: 120px;
 }
 
 .HomeMain img {
     max-width: 100%;
     height: auto;
-    margin-bottom: 10px;
-}
-
-.HomeMain {
-    color: #FFFFFF;
-    background-color: #5A63B0;
-    border-radius: 25px;
-    /* margin: 10px; */
-    padding: 30px;
-    width: 330px;
 }
 
 .carousel-container {
     overflow: hidden;
     position: relative;
-    width: 100%;
+    width: 70%;
     max-width: 400px; /* 이미지의 최대 너비 설정 */
     margin: auto;
 }
@@ -79,26 +83,102 @@ nav {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    width: 30px;
-    height: 30px;
+    width: 35px;
+    height: 35px;
     background-color: #5A63B0;
     border-radius: 30px;
-    border: 2px solid white;
+    border: 1px solid white;
     color: #FFFFFF;
-    
     cursor: pointer;
 }
 
 .prev-btn {
-    left: 10px;
+    left: 0px;
 }
 
 .next-btn {
-    right: 10px;
+    right: 0px;
 }
-/* 💚여기까지💚*/
+
+/* 학교앨범 */
+/* 추가된 부분 - 두 번째 캐러셀 스타일 */
+.second-carousel {
+    padding: 20px;
+    text-align: center;
+}
+
+.second-carousel-container {
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    max-width: 800px; /* 캐러셀의 최대 너비 설정 */
+    margin: auto;
+}
+
+.second-carousel-inner {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.second-carousel-item {
+    width: 33.33%; /* 한 번에 3칸씩 보이도록 설정 */
+    flex: 0 0 auto;
+}
+
+.second-carousel-item img {
+    max-width: 100%;
+    height: auto;
+}
+
+.second-carousel-btn {
+    position: relative; */
+    top: 50%;
+    
+    width: 50px;
+    height: 50px;
+    background-color: #9E82EE;
+    border-radius: 30px;
+    border: 1px solid white;
+    color: #FFFFFF;
+    cursor: pointer;
+    font-size: 20px;
+}
 
 
+.second-carousel-btn.prev-btn {
+    left: 100;
+    bottom: 10px; 
+}
+
+.second-carousel-btn.next-btn {
+    right: 0;
+    bottom: 10px;
+}
+
+.second-carousel-item {
+    width: 33.33%;
+    flex: 0 0 auto;
+    box-sizing: border-box;
+    overflow: hidden; /* 이미지를 감싸는 요소에서 overflow를 hidden으로 설정 */
+}
+
+.second-carousel-item img {
+    max-width: 100%;
+    height: auto;
+    transition: transform 0.3s ease-in-out;
+    width: 100%; /* 이미지가 부모 요소 안에서 100% 크기로 유지되도록 설정 */
+}
+
+.second-carousel-item:hover img {
+    transform: scale(1.2);
+}
+/* 모든 변환을 유지한상태로 크기만 커지기 */
+
+
+
+
+
+/* ✅수정*/
 
 
 section {
