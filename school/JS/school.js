@@ -44,12 +44,11 @@ function showSecondSlide(index) {
     if (currentSecondSlide + slidesToShow >= secondSlides.length) {
         setTimeout(() => {
             showSecondSlide(0);
-        }, 700); // 500ms 딜레이를 줘서 자연스럽게 보이도록 함 (선택적)
+        }, 700); 
     }
 }
 
 function nextSecondSlide() {
-    // 다음 버튼을 눌렀을 때는 한 번에 한 이미지씩 움직이도록
     showSecondSlide(currentSecondSlide + 1);
 }
 

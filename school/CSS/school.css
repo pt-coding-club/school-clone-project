@@ -188,7 +188,7 @@ nav {
 }
 
 .second-carousel-item {
-    width: calc(33.33% - 20px); /* 이미지 간격 너비 계산 */
+    width: calc(33.33% - 20px); /* 이미지 간격 너비 계산하기 */
     flex: 0 0 auto;
     margin: 0 10px; 
     box-sizing: border-box;
