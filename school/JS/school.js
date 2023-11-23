@@ -26,7 +26,7 @@ function prevSlide() {
 showSlide(currentSlide - 1);
 }
 
-//학교엘범
+// 학교앨범
 let currentSecondSlide = 0;
 const slidesToShow = 3; 
 
@@ -40,23 +40,17 @@ function showSecondSlide(index) {
     const translateValue = -currentSecondSlide * (100 / slidesToShow) + '%';
     secondCarouselInner.style.transform = 'translateX(' + translateValue + ')';
 
-    // 슬라이드가 끝까지 도달하면 처음으로 돌아가기
     if (currentSecondSlide + slidesToShow >= secondSlides.length) {
         setTimeout(() => {
             showSecondSlide(0);
         }, 700); 
     }
 }
-
 function nextSecondSlide() {
     showSecondSlide(currentSecondSlide + 1);
 }
-
 function prevSecondSlide() {
-    // 이전 버튼을 눌렀을 때는 한 번에 한 이미지씩 움직이도록
     showSecondSlide(currentSecondSlide - 1);
-
-    // 첫 번째 슬라이드에서 뒤로 가면 마지막 슬라이드로 이동
     if (currentSecondSlide === 0) {
         setTimeout(() => {
             showSecondSlide(secondSlides.length - slidesToShow);
